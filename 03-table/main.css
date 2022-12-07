@@ -7,6 +7,11 @@
     color: wheat;
 }
 
+.product_table tfoot td {
+    background-color: azure;
+    font-weight: bold;
+}
+
 .text-center {text-align: center; }
 .text-right {text-align: right; }
 
