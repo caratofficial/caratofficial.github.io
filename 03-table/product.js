@@ -26,7 +26,7 @@ function loadData() {
 
     let productList = document.getElementById("productList")
     let gross = 0
-    
+
     for (let p in products) {
        let row = document.createElement("tr")
        let productName = document.createElement("td")
@@ -34,7 +34,7 @@ function loadData() {
 
        let quantity = document.createElement("td")
        quantity.innerHTML = products[p].quantity
-       quantity.classList.add("text-right")
+       quantity.classList.add("text-center")
 
        let ppu = document.createElement("td")
        ppu.innerHTML = products[p].ppu

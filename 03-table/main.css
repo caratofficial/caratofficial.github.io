@@ -1,6 +1,5 @@
 .product_table {
     border: 1px solid black;
-    border-spacing: 0px;
 }
 
 .product_table th {
@@ -20,9 +19,13 @@
 }
 
 
-.text-center {text-align: center; }
+.text-center {
+    text-align: center; 
+}
 
-.text-right {text-align: right; }
+.text-right {
+    text-align: right; 
+}
 
 .center {
     margin-left: auto;
