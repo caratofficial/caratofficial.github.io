@@ -9,7 +9,8 @@
     font-weight: bolder;
 }
 
-.product_table tbody td {
+.product_table tbody {
+    background-color: palevioletred;
     border-left: 1px solid azure;
     border-bottom: 1px solid azure;
 }
@@ -20,6 +21,7 @@
 
 
 .text-center {text-align: center; }
+
 .text-right {text-align: right; }
 
 .center {
