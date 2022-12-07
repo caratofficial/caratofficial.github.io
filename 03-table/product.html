@@ -6,7 +6,7 @@
     </head>
     <body onload="loadData()">
         <h1>Product Table with Dynamic content</h1>
-        <span id="myName">xxxxxxx</span>
+        
         <table id="productlist" class="product_table center">
             <thead>
                 <th style="width: 50%">Item</th>
@@ -20,15 +20,21 @@
             <tfoot>
                 <tr>
                     <td colspan="3" class="text-right">Gross</td>
-                    <td class="text-right">69500</td>
+                    <td class="text-right">
+                        <span id="gross"></span>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="3" class="text-right">VAT 7%</td>
-                    <td class="text-right">4865</td>
+                    <td class="text-right">4865
+                    <span id="VAT"></span>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="3" class="text-right">Net</td>
-                    <td class="text-right">74365</td>
+                    <td class="text-right">74365
+                    <span id="Net"></span>
+                    </td>
                 </tr>                
             </tfoot>
         </table>
