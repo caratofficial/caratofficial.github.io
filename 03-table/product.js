@@ -1,4 +1,4 @@
-m// define data in JSON array
+// define data in JSON array
 var products = [
     {
         name: "Samsung TV 50",
@@ -24,5 +24,17 @@ var products = [
 
 function loadData() {
     var elem = document.getElementById("myName")
-    elem.innerHTML ="Thanyaluck Arunrattanakul"
+    elem.innerHTML = "Thanyaluck Arunrattanakul"
+
+    var productList = document.getElementById("productList")
+
+    for (let p in products) {
+       var row = document.createElement("tr")
+       var data = document.createElement("td")
+       data.innerHTML = products[p].name
+
+       row.appendChild(data)
+       productList.appendChild(row)
+    }
+
 }
