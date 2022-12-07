@@ -33,7 +33,20 @@ function loadData() {
        var data = document.createElement("td")
        data.innerHTML = products[p].name
 
-       row.appendChild(data)
+       let quantity = document.createElement("td")
+       quantity.innerHTML = products[p].quantity
+
+       let ppu = document.createElement("td")
+        ppu.innerHTML = products[p].ppu
+
+       let total = document.createElement("td")
+       total.innerHTML = products[p].ppu * products[p].quantity 
+
+
+       row.appendChild(productName)
+       row.appendChild(quantity)
+       row.appendChild(ppu)
+       row.appendChild(total)
        productList.appendChild(row)
     }
 
