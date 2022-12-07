@@ -1,0 +1,8 @@
+.product_table {
+    border: 1px solid black;
+}
+
+.product_table th {
+    background-color: brown;
+    color: wheat;
+}
