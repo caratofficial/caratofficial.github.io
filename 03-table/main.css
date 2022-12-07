@@ -10,12 +10,12 @@
 
 .product_table tbody {
     background-color: palevioletred;
-    border-left: 1px solid azure;
-    border-bottom: 1px solid azure;
+    
 }
 
 .product_table tfoot {
     background-color: beige;
+    font-weight: bold;
 }
 
 
