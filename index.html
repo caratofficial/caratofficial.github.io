@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>        
+        <title>Thanyaluck Page</title>    
+        <style>
+            html * {
+                font-family: Arial !important;
+            }
+            .profile_header {
+                text-align: center;
+                color: white;
+                padding-top: 4vh;
+                padding-bottom: 4vh;
+                height: 100%;
+                background-image: url("imposter bg.webp");
+            }
+
+            h2 {
+                color: #e9967a;
+                margin-bottom: 0pt;
+            }
+            p {
+                margin-bottom: 0pt;
+                font-size: small;
+            }
+            body {
+                background-image: linear-gradient(to bottom right, #deb887, #faebd7);
+            }
+
+            .content-cell {
+                width: 50%;
+                padding-left: 1rem;
+                padding-left: 1rem;
+                background-color:#faebd7;
+            }
+        </style>
+    </head>   
+
+    <body>  
+
+
+        <table style="width: 100%; height: 80%">
+            <tbody>
+                <tr>
+                    <td style="width: 50%">
+                        <div class="profile_header">
+                            <img src="Pic.png" alt="Thanyaluck Profile Picture"
+            style="width: 100px; border-radius: 50%" />
+            <br />
+            <h1 style="font-size:medium;"> 
+            <span id="myName">Thanyaluck Arunrattanakul</span>
+            </h1> 
+            Full-time Student<br /> 
+        </div>
+        </td>   
+        <td class="content-cell">
+          <h2>Kpop fan</h2>
+        <p>            
+            I live Seventeen Kpop band!               
+        </p>   
+        <p>My name is Thanyaluck. My nickname is Lily. Some of my friends called me Oppa.</p>
+            </td>
+            </tr>
+
+        </tbody>
+        </table>
+z <button onclick="changeName()">Change Name</button>
+
+<script>
+    console.log("Hello");
+    var x = 10;
+    var y = 20;
+    var z = x + y;
+    console.log(z)
+
+    var nameAsJack = false
+
+    function changeName() {
+        // change the name
+        var span = document.getElementById("myName");
+        span.innerHTML = "Lasso Toy Story"
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+        
+    </body>
+</html>
+
