@@ -4,12 +4,12 @@
 
 .product_table th {
     background-color: rgb(180, 222, 186);
-    color: wheat;
+    color: rgb(141, 97, 17);
     font-weight: bolder;
 }
 
 .product_table tbody {
-    background-color: rgb(207, 238, 254);
+    background-color: rgb(204, 227, 239);
     
 }
 
