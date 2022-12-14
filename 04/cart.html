@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Product Table</title>
+        <link rel="stylesheet" href="main.css" >
+    </head>
+    <body onload="loadData()">
+        <h1>Cart</h1>
+        <div>
+            Product: 
+            <select id="products">
+                <option value="A">Product A</option>
+                <option value="B">Product B</option>
+                <option value="C">Product C</option>
+            </select>
+            Quantity:
+            <input type="number" id="qty" style="width: 5em;"/>
+            PPU:
+            <input type="number" id="ppu" style="width: 5em;"/>
+            <button onclick="addToCart()" style="width: 5em;">+ Add</button>
+        </div>
+        <table 
+            id="productList"
+            class="product_table center">
+            <thead>
+                <th style="width: 50%">Item</th>
+                <th style="width: 15%">Quantity</th>
+                <th style="width: 15%">PPU</th>
+                <th style="width: 20%">Total</th>
+            </thead>
+            <tbody id="productBody">
+
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="text-right">Gross</td>
+                    <td class="text-right">
+                        <span id="gross"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="text-right">VAT 7%</td>
+                    <td class="text-right">
+                        <span id="vat"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="text-right">Net</td>
+                    <td class="text-right">
+                        <span id="net"></span>
+                    </td>
+                </tr>                
+            </tfoot>
+        </table>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="cart.js"></script>
+    </body>
+</html>
