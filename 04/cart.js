@@ -1,22 +1,22 @@
 // define data in JSON array
 var products = [
     {
-        name: "Care bear",
+        name: "Sunshine Care Bear",
         quantity: 1,
         ppu: 15000
     },
     {
-        name: "Care bear1",
+        name: "Christmas Care Bear",
         quantity: 2,
         ppu: 500
     },
     {
-        name: "Care bear2",
+        name: "Bed time Care Bear",
         quantity: 1,
         ppu: 50000
     },
     {
-        name: "Care bear3",
+        name: "Grumpy Care Bear",
         quantity: 1,
         ppu: 4000
     }

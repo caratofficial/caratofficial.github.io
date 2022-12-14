@@ -3,13 +3,13 @@
 }
 
 .product_table th {
-    background-color: brown;
+    background-color: rgb(180, 222, 186);
     color: wheat;
     font-weight: bolder;
 }
 
 .product_table tbody {
-    background-color: palevioletred;
+    background-color: rgb(197, 146, 163);
     
 }
 
