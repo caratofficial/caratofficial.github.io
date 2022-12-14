@@ -57,7 +57,7 @@ function loadData() {
     let allRows = ""
     let gross = 0
     for (let p in products) {
-        let cellName = `<td><img class='icon' src='icon-delete.png' onclick='deleteProduct("${p}")'> ` + products[p].name + "</td>"
+        let cellName = `<td><img class='icon' src='delete.png' onclick='deleteProduct("${p}")'> ` + products[p].name + "</td>"
         let cellQuantity = '<td class="text-right">' + products[p].quantity + "</td>"
         let cellPPU = '<td class="text-right">' + products[p].ppu + "</td>"
         let total = products[p].ppu * products[p].quantity
