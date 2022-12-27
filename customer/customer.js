@@ -26,8 +26,17 @@ $(document).ready(function () {
 });
 
 function addToCustomer() {
-
+    let productObj = {
+        name: $('#name').val(),
+        email: $('#email').val(),
+        phone: $('#phone').val()
     }
+    
+    $('#customerdata').html("")
+
+    products.push(productObj)
+    loadData()
+}
 
     function deleteCustomer(index) {
         console.log("DELETE",index)
@@ -40,7 +49,7 @@ function addToCustomer() {
         let allRows = ""
         for (let p in customers) {
             let cellName = `<td><img class='icon' src='delete.png' onclick='deletename("${p}")'> ` + products[p].name + "</td>"
-            let cellEmail = '<td class="text-right">' + products[p].email + "</td>"
+            let cellEmail = '<td>' + products[p].email + "</td>"
             let cellPhone = '<td class="text-right">' + products[p].ppu + "</td>"
         }
         $('#customerdata').html(allRows)
