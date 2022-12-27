@@ -1,6 +1,5 @@
 var customers = []
 
-
 $(document).ready(function () {
     console.log("ready!");
     // load data
