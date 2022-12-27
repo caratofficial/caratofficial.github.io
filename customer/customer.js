@@ -12,7 +12,7 @@ $(document).ready(function () {
             // save the data record into our local variable
             customers.push(data[d])
             let dataStr = `<tr>
-                <<td> <img src='delete.png' width='25em' onclick='deleteCustomer("${d}")'/> ${data[d].name} </td>
+                <<td> <img src='delete.png' width='20em' onclick='deleteCustomer("${d}")'/> ${data[d].name} </td>
                 <td>${data[d].email}</td>
                 <td>${data[d].phone}</td>
             </tr>`
@@ -31,9 +31,15 @@ function addToCustomer() {
         phone: $('#phone').val()
     }
     
+    let customersList = document.getElementById("customerList")
+    for (let x = 0; x < customers.length; x++) {
+    customersList.deleteRow()
+     }
+
+
     $('#customerdata').html("")
 
-    products.push(productObj)
+    customers.push(productObj)
     loadData()
 }
 
@@ -49,8 +55,8 @@ function addToCustomer() {
         for (let p in customers) {
             let cellName = `<td><img class='icon' src='delete.png' onclick='deletename("${p}")'> ` + products[p].name + "</td>"
             let cellEmail = '<td>' + products[p].email + "</td>"
-            let cellPhone = '<td class="text-right">' + products[p].ppu + "</td>"
-            let row = `<tr>${cellName}${cellEmail}${cellPPU}${cellPhone}</tr>`
+            let cellPhone = '<td class="text-right">' + phone[p].ppu + "</td>"
+            let row = `<tr>${cellName}${cellEmail}${cellPhone}</tr>`
             allRows += row
         }
         $('#customerdata').html(allRows)
