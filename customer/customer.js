@@ -12,7 +12,7 @@ $(document).ready(function () {
             // save the data record into our local variable
             customers.push(data[d])
             let dataStr = `<tr>
-                <td>${data[d].name}</td>
+                <<td> <img src='delete.png' width='25em' onclick='deleteCustomer("${d}")'/> ${data[d].name} </td>
                 <td>${data[d].email}</td>
                 <td>${data[d].phone}</td>
             </tr>`
@@ -50,6 +50,8 @@ function addToCustomer() {
             let cellName = `<td><img class='icon' src='delete.png' onclick='deletename("${p}")'> ` + products[p].name + "</td>"
             let cellEmail = '<td>' + products[p].email + "</td>"
             let cellPhone = '<td class="text-right">' + products[p].ppu + "</td>"
+            let row = `<tr>${cellName}${cellEmail}${cellPPU}${cellPhone}</tr>`
+            allRows += row
         }
         $('#customerdata').html(allRows)
     
