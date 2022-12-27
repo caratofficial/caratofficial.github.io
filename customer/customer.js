@@ -31,7 +31,7 @@ function addCustomer() {
         phone: $('#exampleFormControlInput3').val()
     }
     
-    $('#customerdata').html("")
+    $('#data-table').html("")
 
 
     customers.push(customerObj)
@@ -45,7 +45,7 @@ function addCustomer() {
     function deleteCustomer(index) {
         console.log("DELETE",index)
         delete customers[index]  // delete the element from array
-        $('#customerdata').html("")
+        $('#data-table').html("")
         loadData()
     }
 
@@ -54,11 +54,11 @@ function addCustomer() {
         for (let p in customers) {
             let cellName = `<td><img class='icon' src='delete.png' onclick='deleteCustomer("${p}")'> ` + customers[p].name + "</td>"
             let cellEmail = '<td>' + customers[p].email + "</td>"
-            let cellPhone = '<td class="text-right">' + phone[p].ppu + "</td>"
+            let cellPhone = '<td class="text-right">' + customers[p].phone + "</td>"
             let row = `<tr>${cellName}${cellEmail}${cellPhone}</tr>`
             allRows += row
         }
-        $('#customerdata').html(allRows)
+        $('#data-table').html(allRows)
     
        
     }
