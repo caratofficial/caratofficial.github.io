@@ -16,7 +16,7 @@ $(document).ready(function () {
                 <td>${data[d].email}</td>
                 <td>${data[d].phone}</td>
             </tr>`
-            $("#customerdata tr:last").after(dataStr)
+            $("#data-table tr:last").after(dataStr)
         }
 
         console.log(customers)
