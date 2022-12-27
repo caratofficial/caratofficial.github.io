@@ -24,3 +24,27 @@ $(document).ready(function () {
         loadData();
     });
 });
+
+function addToCustomer() {
+
+    }
+
+    function deleteCustomer(index) {
+        console.log("DELETE",index)
+        delete customers[index]  // delete the element from array
+        $('#customerdata').html("")
+        loadData()
+    }
+
+    function loadData() {
+        let allRows = ""
+        for (let p in customers) {
+            let cellName = `<td><img class='icon' src='delete.png' onclick='deletename("${p}")'> ` + products[p].name + "</td>"
+            let cellEmail = '<td class="text-right">' + products[p].email + "</td>"
+            let cellPhone = '<td class="text-right">' + products[p].ppu + "</td>"
+        }
+        $('#customerdata').html(allRows)
+    
+       
+    }
+    
