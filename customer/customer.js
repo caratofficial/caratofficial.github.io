@@ -52,8 +52,8 @@ function addCustomer() {
     function loadData() {
         let allRows = ""
         for (let p in customers) {
-            let cellName = `<td><img class='icon' src='delete.png' onclick='deletename("${p}")'> ` + products[p].name + "</td>"
-            let cellEmail = '<td>' + products[p].email + "</td>"
+            let cellName = `<td><img class='icon' src='delete.png' onclick='deletename("${p}")'> ` + customers[p].name + "</td>"
+            let cellEmail = '<td>' + customers[p].email + "</td>"
             let cellPhone = '<td class="text-right">' + phone[p].ppu + "</td>"
             let row = `<tr>${cellName}${cellEmail}${cellPhone}</tr>`
             allRows += row
