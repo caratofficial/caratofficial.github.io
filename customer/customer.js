@@ -24,7 +24,7 @@ $(document).ready(function () {
     });
 });
 
-function addToCustomer() {
+function addCustomer() {
     let customerObj = {
         name: $('#exampleFormControlInput1').val(),
         email: $('#exampleFormControlInput2').val(),
