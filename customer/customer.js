@@ -37,7 +37,7 @@ function addToCustomer() {
     customers.push(customerObj)
     
 
-    let customersList = document.getElementById("customerList")
+    let customersList = document.getElementById("customersList")
     for (let x = 0; x < customers.length; x++) {
     customersList.deleteRow()
     loadData()
