@@ -26,20 +26,21 @@ $(document).ready(function () {
 
 function addToCustomer() {
     let customerObj = {
-        name: $('#name').val(),
-        email: $('#email').val(),
-        phone: $('#phone').val()
+        name: $('#exampleFormControlInput1').val(),
+        email: $('#exampleFormControlInput2').val(),
+        phone: $('#exampleFormControlInput3').val()
     }
     
     $('#customerdata').html("")
 
    //
     customers.push(customerObj)
-    loadData()
+    
 
     let customersList = document.getElementById("customerList")
     for (let x = 0; x < customers.length; x++) {
     customersList.deleteRow()
+    loadData()
      }
 
      //
