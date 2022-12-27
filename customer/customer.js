@@ -12,7 +12,7 @@ $(document).ready(function () {
             // save the data record into our local variable
             customers.push(data[d])
             let dataStr = `<tr>
-                <<td> <img src='delete.png' width='20em' onclick='deleteCustomer("${d}")'/> ${data[d].name} </td>
+                <td> <img src='delete.png' width='20em' onclick='deleteCustomer("${d}")'/> ${data[d].name} </td>
                 <td>${data[d].email}</td>
                 <td>${data[d].phone}</td>
             </tr>`
@@ -31,16 +31,16 @@ function addToCustomer() {
         phone: $('#phone').val()
     }
     
+    $('#customerdata').html("")
+
+    customers.push(productObj)
+    loadData()
+
     let customersList = document.getElementById("customerList")
     for (let x = 0; x < customers.length; x++) {
     customersList.deleteRow()
      }
 
-
-    $('#customerdata').html("")
-
-    customers.push(productObj)
-    loadData()
 }
 
     function deleteCustomer(index) {
