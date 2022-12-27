@@ -33,17 +33,12 @@ function addToCustomer() {
     
     $('#customerdata').html("")
 
-   //
+
     customers.push(customerObj)
-    
+    console.log(customers)
 
-    let customersList = document.getElementById("customersList")
-    for (let x = 0; x < customers.length; x++) {
-    customersList.deleteRow()
+    let index = customers.length - 1
     loadData()
-     }
-
-     //
 
 }
 
