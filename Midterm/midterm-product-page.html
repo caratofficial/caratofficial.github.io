@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link" aria-current="page" href="/">Home</a>
-                    <a class="nav-link active" href="/customers">Customers</a>
+                    <a class="nav-link active" href="/Quotation">Quotation</a>
                     <a class="nav-link" href="/04/cart">Products</a>
                 </div>
             </div>
@@ -40,7 +40,7 @@
     <div class="container">
         <div class="row">
             <div class="col-10">
-                <h1>Customers</h1>
+                <h1>Quotation</h1>
             </div>
             <div class="col-2">
                 <!-- Button trigger modal -->
@@ -52,9 +52,10 @@
         <table id="data-table" class="table table-bordered table-striped">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Item</th>
+                    <th>Amount</th>
                 </tr>
             </thead>
             <tbody id="customerdata">
@@ -72,29 +73,29 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">New Customer</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">New Item</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                        <label for="exampleFormControlInput1" class="form-label">Item</label>
                         <input type="text" class="form-control" id="exampleFormControlInput1"
                             placeholder="Joe Black">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput2" class="form-label">Email address</label>
+                        <label for="exampleFormControlInput2" class="form-label">Price per unit</label>
                         <input type="email" class="form-control" id="exampleFormControlInput2"
                             placeholder="name@example.com">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput3" class="form-label">Phone</label>
+                        <label for="exampleFormControlInput3" class="form-label">Quantity</label>
                         <input type="phone" class="form-control" id="exampleFormControlInput3"
                             placeholder="0987654321">
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="addCustomer()">Add</button>
+                    <button type="button" class="btn btn-primary" onclick="addItem()">Add</button>
                 </div>
             </div>
         </div>
