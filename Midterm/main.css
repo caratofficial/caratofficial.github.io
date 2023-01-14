@@ -1,19 +1,19 @@
-.product_table {
+.data-table {
     border: 1px solid black;
 }
 
-.product_table th {
+.data-table thead {
     background-color: rgb(180, 222, 186);
     color: rgb(141, 97, 17);
     font-weight: bolder;
 }
 
-.product_table tbody {
+.data-table tbody {
     background-color: rgb(204, 227, 239);
     
 }
 
-.product_table tfoot {
+.data-table tfoot {
     background-color: beige;
     font-weight: bold;
 }
