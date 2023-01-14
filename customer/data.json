@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Leon Kenedy",
+        "email": "leon@racoon.com",
+        "phone": "098-123-4567"
+    },
+    {
+        "name": "Clair Redfield",
+        "email": "clair@racoon.com",
+        "phone": "098-123-9999"
+    },
+    {
+        "name": "Jill Valentine",
+        "email": "jill@racoon.com",
+        "phone": "111-111111"
+    },
+    {
+		"name": "Tate Beard",
+		"email": "nunc.sed@outlook.org",
+		"phone": "(880) 981-7631"
+	},
+	{
+		"name": "Kiona Talley",
+		"email": "netus.et@aol.com",
+		"phone": "(747) 540-7374"
+	},
+	{
+		"name": "Lunea Price",
+		"email": "etiam@icloud.net",
+		"phone": "(980) 608-7151"
+	},
+	{
+		"name": "Cara Benson",
+		"email": "dapibus.ligula@aol.ca",
+		"phone": "1-728-606-5103"
+	},
+	{
+		"name": "Alexa Juarez",
+		"email": "odio@icloud.edu",
+		"phone": "(669) 558-2928"
+	}
+]

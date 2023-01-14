@@ -1,0 +1,33 @@
+.product_table {
+    border: 1px solid black;
+}
+
+.product_table th {
+    background-color: brown;
+    color: wheat;
+    font-weight: bolder;
+}
+
+.product_table tbody {
+    background-color: palevioletred;
+    
+}
+
+.product_table tfoot {
+    background-color: beige;
+    font-weight: bold;
+}
+
+
+.text-center {
+    text-align: center; 
+}
+
+.text-right {
+    text-align: right; 
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
