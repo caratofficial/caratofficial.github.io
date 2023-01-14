@@ -12,7 +12,7 @@ $(document).ready(function () {
             // save the data record into our local variable
             products.push(data[d])
             let dataStr = `<tr>
-    //            <td> <img src='delete.png' width='20em' onclick='deleteCustomer("${d}")'/> ${data[d].Item} </td>
+    //            <td> <img src='delete.png' width='20em' onclick='deleteItem("${d}")'/> ${data[d].Item} </td>
                 <td>${data[d].Priceperunit}</td>
                 <td>${data[d].Quantity}</td>
             </tr>`
@@ -42,7 +42,7 @@ function addItem() {
 
 }
 
-    function deleteCustomer(index) {
+    function deleteItem(index) {
         console.log("DELETE",index)
         delete products[index]  // delete the element from array
         $('#data-table').html("")
@@ -52,7 +52,7 @@ function addItem() {
     function loadData() {
         let allRows = ""
         for (let p in products) {
-            let cellItem = `<td><img class='icon' width='20em' src='delete.png' onclick='deleteCustomer("${p}")'> ` + products[p].Item + "</td>"
+            let cellItem = `<td><img class='icon' width='20em' src='delete.png' onclick='deleteItem("${p}")'> ` + products[p].Item + "</td>"
             let cellPriceperunit = '<td>' + products[p].Priceperunit + "</td>"
             let cellQuantity = '<td class="text-right">' + products[p].Quantity + "</td>"
             let row = `<tr>${cellItem}${cellPriceperunit}${cellQuantity}</tr>`
