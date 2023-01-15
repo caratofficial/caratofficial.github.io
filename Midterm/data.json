@@ -1,0 +1,25 @@
+[{
+        "quantity": 1,
+        "name": "Sunshine Care Bear",
+        "price": 15000,
+        "discount": 0
+    },
+    {
+        "quantity": 2,
+        "name": "Christmas Care Bear",
+        "price": 500,
+        "discount": 0
+    },
+    {
+        "quantity": 1,
+        "name": "Bed time Care Bear",
+        "price": 50000,
+        "discount": 0
+    },
+    {
+        "quantity": 1,
+        "name": "Grumpy Care Bear",
+        "price": 4000,
+        "discount": 0
+    }
+]
